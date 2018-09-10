@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta Malar");
+
+
+body {
+  font-family: "Mukta Malar";
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.black {
+  color: black;
+}
+
+.container.pills {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.badge.badge-pill.badge-light, .badge.badge-pill.badge-dark {
+  font-size: 1.6em;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.reward-text {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  border-radius: 10px;
+  margin-top: 18%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.dead-text {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  border-radius: 10px;
+  margin-top: 40%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.wanted-name {
+  color: white;
+  font-size: 1.7em;
+  margin-top: 30%;
+  text-align: center;
+}
+
+b {
+  color: orange;
+}
+
+.card-img-top.gandalf {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(http://images.innoveduc.fr/integration_gandalf.png);
+  background-size: cover;
+  height: 300px;
+  z-index: 3;
+}
+
+.card-img-top-2.gandalf {
+  background-image: url(http://images.innoveduc.fr/integration_gandalf.png);
+  background-size: cover;
+  height: 300px;
+  margin-top: -300px;
+  padding-top: 245px;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.card-img-top.gandalf:hover {
+  opacity: 0;
+}
+
+.card-img-top.aragorn {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),url(https://vignette.wikia.nocookie.net/lotr/images/b/b6/Aragorn_profile.jpg/revision/latest?cb=20170121121423);
+  background-size: cover;
+  height: 300px;
+  z-index: 3;
+}
+
+.card-img-top-2.aragorn {
+  background-image: url(https://vignette.wikia.nocookie.net/lotr/images/b/b6/Aragorn_profile.jpg/revision/latest?cb=20170121121423);
+  background-size: cover;
+  height: 300px;
+  margin-top: -300px;
+  padding-top: 245px;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.card-img-top.aragorn:hover {
+  opacity: 0;
+}
+
+.card-img-top.legolas {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://1.bp.blogspot.com/-M8YsX6DlN_s/TkmismaHlHI/AAAAAAAAAUg/5KTsUNaVbhI/s1600/legolas.jpg);
+  background-size: cover;
+  height: 300px;
+  font-size: 3em;
+  z-index: 3;
+}
+
+.card-img-top-2.legolas {
+  background-image: url(http://1.bp.blogspot.com/-M8YsX6DlN_s/TkmismaHlHI/AAAAAAAAAUg/5KTsUNaVbhI/s1600/legolas.jpg);
+  background-size: cover;
+  height: 300px;
+  margin-top: -300px;
+  padding-top: 245px;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.card-img-top.legolas:hover {
+  opacity: 0;
+}
+
+.scroll-box-reward {
+  height: 150px;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+.ml-3 {
+  height: 35vmin;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+}
+
+.align-self-center.mr-3 {
+  height: 35vmin;
+  width: 35vmin;
+}
+
+.mb-0 {
+  margin-top: 15px;
+}
+
+.col.hunters {
+  padding-top: 25px;
+}
+
+.table.table-striped {
+  border: solid 1px rgb(231, 231, 231);
+}
+
+.card.mb-3.ring-capabilities {
+  border: solid 1px rgb(231, 231, 231);
+}
+
+.card-gollum {
+  max-width: 60rem;
+  border: solid 1px rgb(231, 231, 231);
+}
+
+.scroll-box-army {
+  height: 230px;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+#contact {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+form {
+  text-align: center;
+  font-family: arial;
+  font-size: 1em;
+  width: 400px;
+  }
+
+label {
+  font-family: inherit;
+  color: black;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+#email {
+  height: 30px;
+}
+
+#message {
+  height: 250px;
+}
+
+#email, #message {
+  width: 35%;
+  font-family: inherit;
+  background-color: #F2F2F2;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#button {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  width: 160px;
+  height: 45px;
+  margin-bottom: 10px;
+  background-color: grey; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: #e2e2e1;
+}
+
+footer {
+  padding-top: 20px;
+  background-color: rgb(46, 45, 45);
+  color: white;
+}
