@@ -1,22 +1,122 @@
 @import url("https://fonts.googleapis.com/css?family=Mukta Malar");
 
+@font-face{
+  font-family: "anirm";
+  src: url('./assets/fonts/titles/anirm___.ttf')format("truetype");
+}
+
+@font-face{
+  font-family: "tngan";
+  src: url('./assets/fonts/undertitles/tngan.ttf')format("truetype");
+}
+
+@font-face{
+  font-family: "partybusiness";
+  src: url('./assets/fonts/text/partybusiness.ttf')format("truetype");
+}
+
+.navbar {
+  font-family: "anirm";
+  background-color: rgb(235, 102, 41);
+  color: white;
+  height: 10vh;
+}
+
+.collapse.navbar-collapse {
+  background-color: rgb(235, 102, 41);
+}
+
+.navbar-brand {
+  font-size: 2.5vmin
+}
+
+
+ul.navbar-nav li:not(:last-child) {
+  border-right:1px solid white;
+  margin-right:20px;
+  padding-right:20px;
+}
+
+.nav-item a:link{
+  color: white;
+}
+
+.nav-item a:visited {
+  color: white;
+}
+
+.nav-item a:hover {
+  border-bottom: 3px solid white; 
+  line-height: -10px;
+}
+
+
+.Carousel {
+  font-family: "partybusiness";
+  font-size: 3em; 
+  color: white; 
+}
+
+.carousel-caption {
+  transform: translateY(-50%);
+  bottom: 0;
+  top: 50%;
+}
+
+h1.carousel-phrase {
+  font-size: 6vw;
+  text-align: center;
+}
+
+.command {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 3.5vw;
+}
 
 body {
   font-family: "Mukta Malar";
 }
 
-section {
-  margin-top: 50px;
+/* section {
   margin-bottom: 50px;
-}
+} */
 
 h2 {
-  text-align: center;
   margin-bottom: 20px;
 }
-
+/* 
 .black {
   color: black;
+} */
+
+#fellows {
+  font-family: "partybusiness";
+  
+  background-color: rgb(218, 214, 214);
+  padding: 3vh;
+  padding-bottom: 5vh;
+}
+
+.fellowseffect {
+  font-family: "tngan";
+  font-size: 3vh;
+  color: rgb(235, 102, 41);
+
+}
+
+.card.rewards {
+  background-color: rgb(44, 42, 42);
+  border-radius: 0;
+  margin-left: 4vh;
+  margin-right: 4vh;
+}
+
+.fellows {
+  font-family: "anirm";
+  font-size: 4vh;
+
 }
 
 .container.pills {
@@ -24,38 +124,63 @@ h2 {
   justify-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: none;
 }
 
-.badge.badge-pill.badge-light, .badge.badge-pill.badge-dark {
-  font-size: 1.6em;
+.badge.badge-pill {
+  font-size: 2.7vh;
   margin-left: 20px;
   display: flex;
   justify-content: center;
+  border-radius: 0;
+  font-family: "anirm";
+}
+
+.badge.badge-pill:hover {
+ border-bottom: 5px solid rgb(235, 102, 41);
+ color: rgb(235, 102, 41);
+ cursor: pointer;
 }
 
 .reward-text {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
   border-radius: 10px;
-  margin-top: 18%;
+  margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
-  text-align: center;
+  font-size: 4vh;
+  text-align: center ;
 }
 
 .dead-text {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
   border-radius: 10px;
-  margin-top: 40%;
+  margin-top: 15%;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
+  color: rgb(235, 102, 41);
 }
 
 .wanted-name {
   color: white;
-  font-size: 1.7em;
-  margin-top: 30%;
+  font-size: 10vh;
+  margin-top: 10%;
   text-align: center;
+}
+
+span.inner {
+  color: white;
+  font-size: 10vh;
+  margin-top: 10%;
+  text-align: center;
+}
+span.outer {
+  color: rgb(235, 102, 41);
+  text-decoration: line-through;
+  text-align: center;
+  display:table;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 b {
@@ -67,6 +192,7 @@ b {
   background-size: cover;
   height: 300px;
   z-index: 3;
+  border-radius: 0;
 }
 
 .card-img-top-2.gandalf {
@@ -75,6 +201,7 @@ b {
   height: 300px;
   margin-top: -300px;
   padding-top: 245px;
+  font-size: 5vh;
   color: white;
   text-align: center;
   z-index: 2;
@@ -85,18 +212,27 @@ b {
 }
 
 .card-img-top.aragorn {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),url(https://vignette.wikia.nocookie.net/lotr/images/b/b6/Aragorn_profile.jpg/revision/latest?cb=20170121121423);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),url(./assets/images/aragorn.png);
   background-size: cover;
   height: 300px;
   z-index: 3;
+  border-radius: 0;
 }
 
+.card-text {
+  color: white;
+  font-size: 3vh;
+}
+
+
+
 .card-img-top-2.aragorn {
-  background-image: url(https://vignette.wikia.nocookie.net/lotr/images/b/b6/Aragorn_profile.jpg/revision/latest?cb=20170121121423);
+  background-image: url(./assets/images/aragorn.png);
   background-size: cover;
   height: 300px;
   margin-top: -300px;
   padding-top: 245px;
+  font-size: 5vh;
   color: white;
   text-align: center;
   z-index: 2;
@@ -106,51 +242,116 @@ b {
   opacity: 0;
 }
 
-.card-img-top.legolas {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://1.bp.blogspot.com/-M8YsX6DlN_s/TkmismaHlHI/AAAAAAAAAUg/5KTsUNaVbhI/s1600/legolas.jpg);
+.card-img-top.gimli {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/gimli.png);
   background-size: cover;
   height: 300px;
   font-size: 3em;
   z-index: 3;
+  border-radius: 0;
 }
 
-.card-img-top-2.legolas {
-  background-image: url(http://1.bp.blogspot.com/-M8YsX6DlN_s/TkmismaHlHI/AAAAAAAAAUg/5KTsUNaVbhI/s1600/legolas.jpg);
+.card-img-top-2.gimli {
+  background-image: url(./assets/images/gimli.png);
   background-size: cover;
   height: 300px;
   margin-top: -300px;
   padding-top: 245px;
+  font-size: 5vh;
   color: white;
   text-align: center;
   z-index: 2;
 }
 
-.card-img-top.legolas:hover {
+.card-img-top.gimli:hover {
   opacity: 0;
 }
 
 .scroll-box-reward {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 150px;
   overflow-y: scroll;
   margin-bottom: 25px;
+  font-size: 3.6vh;
+}
+
+#reward {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  background-color: black;
+  color: white;
+  font-family: "partybusiness"
+}
+
+.mt-0.mb-1 {
+  font-family: "anirm";
+  font-size: 4vh;
 }
 
 .ml-3 {
   height: 35vmin;
 }
 
-.btn {
-  background-color: black;
-  color: white;
+.image-coin {
+  width: 20vh;
+  height: 21.8vh;
+  padding-bottom: 3vh;
 }
 
-.align-self-center.mr-3 {
-  height: 35vmin;
-  width: 35vmin;
+.btn.contact {
+  background-color: rgb(241, 239, 239);
+  font-size: 3vh;
+  font-family: anirm;
+  color: rgb(235, 102, 41);
+  text-align: center;
+}
+
+#hunters {
+  background-color: rgb(218, 214, 214);
+  padding: 3vh;
+  padding-bottom: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  font-family: partybusiness;
+}
+
+
+.hunta {
+  font-family: partybusiness;
+  color: rgb(235, 102, 41);
+  font-size: 7vh;
+}
+
+.captures {
+  font-size: 4vh;
+}
+
+.captures a:visited {
+  color: rgb(19, 19, 19);
 }
 
 .mb-0 {
   margin-top: 15px;
+}
+
+.hunterImage {
+  width: 27vh;
+  height: 27vh;
+}
+
+.btn.btn-fb {
+  background-color: black;
+  color: rgb(235, 102, 41);
+  font-size: 3vh;
+}
+
+.nopadding {
+  padding-left: 0 !important;
+  margin: 0 !important;
 }
 
 .col.hunters {
