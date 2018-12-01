@@ -15,6 +15,20 @@
   src: url('./assets/fonts/text/partybusiness.ttf')format("truetype");
 }
 
+html {
+  font-size: 16px;
+}
+
+html,body {
+  margin:0;
+  padding:0;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .navbar {
   font-family: "anirm";
   background-color: rgb(235, 102, 41);
@@ -26,15 +40,20 @@
   background-color: rgb(235, 102, 41);
 }
 
-.navbar-brand {
-  font-size: 2.5vmin
-}
-
+@media screen and (max-width:500px){
+.logoRing {
+      width: 30vh; 
+    }
+  }
 
 ul.navbar-nav li:not(:last-child) {
   border-right:1px solid white;
-  margin-right:20px;
-  padding-right:20px;
+  margin-right:10px;
+  padding-right:10px;
+}
+
+ul.navbar-nav li {
+  font-size: 2.5vmin;
 }
 
 .nav-item a:link{
@@ -47,9 +66,7 @@ ul.navbar-nav li:not(:last-child) {
 
 .nav-item a:hover {
   border-bottom: 3px solid white; 
-  line-height: -10px;
 }
-
 
 .Carousel {
   font-family: "partybusiness";
@@ -75,21 +92,11 @@ h1.carousel-phrase {
   font-size: 3.5vw;
 }
 
-body {
-  font-family: "Mukta Malar";
-}
-
-/* section {
-  margin-bottom: 50px;
-} */
 
 h2 {
   margin-bottom: 20px;
 }
-/* 
-.black {
-  color: black;
-} */
+
 
 #fellows {
   font-family: "partybusiness";
@@ -98,6 +105,7 @@ h2 {
   padding: 3vh;
   padding-bottom: 5vh;
 }
+
 
 .fellowseffect {
   font-family: "tngan";
@@ -113,18 +121,23 @@ h2 {
   margin-right: 4vh;
 }
 
-.fellows {
+.section-titles {
   font-family: "anirm";
   font-size: 4vh;
 
 }
 
+@media screen and (max-width: 500px) {
+  .section-titles {
+      font-size: 4.4vmin !important;
+    }
+  }
+
 .container.pills {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: none;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 .badge.badge-pill {
@@ -161,9 +174,14 @@ h2 {
   color: rgb(235, 102, 41);
 }
 
+.wanted {
+  padding-right: 0 !important;
+  padding-left: 0 !important
+}
+
 .wanted-name {
   color: white;
-  font-size: 10vh;
+  font-size: 2rem;
   margin-top: 10%;
   text-align: center;
 }
@@ -243,7 +261,7 @@ b {
 }
 
 .card-img-top.gimli {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/gimli.png);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./assets/images/gimli.png);
   background-size: cover;
   height: 300px;
   font-size: 3em;
@@ -271,7 +289,7 @@ b {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 150px;
+  height: 20vh;
   overflow-y: scroll;
   margin-bottom: 25px;
   font-size: 3.6vh;
@@ -313,17 +331,21 @@ b {
 #hunters {
   background-color: rgb(218, 214, 214);
   padding: 3vh;
-  padding-bottom: 5vh;
-  padding-left: 5vh;
-  padding-right: 5vh;
+  padding-bottom: 8vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
   font-family: partybusiness;
 }
 
+.media-body.hunt {
+  height: 23vh;
+  margin-top: 3vh;
+}
 
 .hunta {
   font-family: partybusiness;
   color: rgb(235, 102, 41);
-  font-size: 7vh;
+  font-size: 6vmin;
 }
 
 .captures {
@@ -335,12 +357,16 @@ b {
 }
 
 .mb-0 {
-  margin-top: 15px;
+  margin-top: 3vh;
 }
 
 .hunterImage {
-  width: 27vh;
-  height: 27vh;
+  width: 30vmin;
+  height: 30vmin;
+}
+
+.hunter-row {
+  margin-top: 3vh;
 }
 
 .btn.btn-fb {
@@ -350,88 +376,236 @@ b {
 }
 
 .nopadding {
-  padding-left: 0 !important;
-  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .col.hunters {
   padding-top: 25px;
 }
 
-.table.table-striped {
-  border: solid 1px rgb(231, 231, 231);
+#ring {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  background-color: black;
+  color: white;
+  font-family: "partybusiness"
 }
 
-.card.mb-3.ring-capabilities {
-  border: solid 1px rgb(231, 231, 231);
+.card-head {
+  font-family: "anirm";
+  font-size: 3vh;
+  background-color: rgb(235, 102, 41);
+  border-radius: 10px 10px 0px 0px !important; 
 }
 
-.card-gollum {
-  max-width: 60rem;
-  border: solid 1px rgb(231, 231, 231);
+.body-wanted {
+  min-height: 19vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.scroll-box-army {
-  height: 230px;
-  overflow-y: scroll;
-  margin-bottom: 25px;
+.ring-cards{
+  /* border: none; */
+  font-family: "anirm";
 }
 
-#contact {
-  padding-top: 50px;
-  padding-bottom: 80px;
+.ring-capabilities {
+  margin-top: 4vh;
+  border: transparent;
+  border-bottom: 6px solid rgb(235, 102, 41);
+  border-radius: 10px 10px 0px 0px; 
+  background-color: rgb(231, 231, 231);
+  font-size: 3vh;
 }
 
-form {
+@media screen and (max-width: 600px) {
+.ring-capabilities {
+    font-size: 2vmin;
+  }
+}
+
+.ring-table {
+  font-family: anirm;
+}
+
+.head-border {
+  border-top: none !important;
+  border-bottom: 3px solid black !important;
+}
+
+.ring-table-body {
+  color: grey;
+}
+
+.stripe {
+  border-bottom: 1.8px solid rgb(192, 192, 192) !important;
+}
+
+.rounded-circle {
+  height: 25vmin !important;
+  width: 25vmin !important;
+}
+
+.gollum-text {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: rgb(92, 92, 92) !important;
+  font-family: partybusiness !important;
+  font-size: 7vmin !important;
+  line-height: 70%; 
+}
+
+.gollum-text-right {
+  text-align: right;
+}
+
+#joinarmy {
+  background-color: rgb(218, 214, 214);
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  font-family: partybusiness;
+}
+
+
+
+.sauronsarmy {
+  height: 16vw;
+}
+
+.weneedyou {
+  height: 18vw;
+}
+
+.joinarmyrows {
+  margin-top: 4vh;
+}
+
+.armytext {
+  font-size: 3.5vmin;
+}
+
+.joinarmy {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3vh;
   text-align: center;
-  font-family: arial;
-  font-size: 1em;
-  width: 400px;
+  font-family: anirm;
+  color: rgb(235, 102, 41);
+  text-align: center;
+  font-size: 4vmin;
+}
+
+.more-info {
+  background-color: black !important;
+  box-shadow: 1vh 1vh 1vh black;
+  font-size: 3vmin;
+  color: rgb(235, 102, 41);
+}
+
+.more-info:hover {
+  background-color: rgb(68, 68, 68) !important; 
+}
+
+@media screen and (max-width: 320px) {
+  .more-info {
+      font-size: 2vmin !important;
+    }
   }
 
-label {
-  font-family: inherit;
-  color: black;
-  font-size: inherit;
-  font-weight: bold;
+  @media screen and (max-width: 768px) {
+    .more-info {
+        font-size: 2vmin !important;
+      }
+    }
+
+
+#contact {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    background-color: black;
+    color: white;
+    font-family: "partybusiness"
+  
 }
 
-#email {
-  height: 30px;
+
+
+.form-group {
+  margin-top: 5vh;
+  text-align: center;
+  font-family: anirm;
+  font-size: 1rem;
+
+  }
+
+  .form-control {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  select {
+background-color: white;
+width: 100%;
+  }
+
+.map {
+  /* height: 25vw; */
+  width: 100%
 }
 
-#message {
-  height: 250px;
-}
+@media screen and (max-width: 320px) {
+  .map {
+      width: 38vh;
+    }
+  }
 
-#email, #message {
-  width: 35%;
-  font-family: inherit;
-  background-color: #F2F2F2;
-  border: solid 1px black;
-  border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
 
-#button {
-  color: white;
-  font-size: 2em;
-  font-weight: bold;
-  width: 160px;
-  height: 45px;
-  margin-bottom: 10px;
-  background-color: grey; 
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#button:hover {
-  background-color: #e2e2e1;
-}
+  @media screen and (max-width: 768px) {
+    .map {
+      width: 38vh;
+    }
+    }
+    @media screen and (max-width: 768px) {
+      .map {
+          width: 30vh;
+        }
+      }
+  
 
 footer {
   padding-top: 20px;
-  background-color: rgb(46, 45, 45);
+  background-color: rgb(235, 102, 41);
+  color: white;
+  font-family: anirm;
+}
+
+.foot {
+  margin-right: 0 !important;
+}
+
+ul {
+  list-style-type: none;
+}
+a:link {
   color: white;
 }
+
+.sauron4ever a:visited {
+  color: white !important;
+}
+  
+  .sauron4ever a:hover {
+    color: white;
+  
+  }
